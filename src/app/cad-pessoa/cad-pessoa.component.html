@@ -1,0 +1,7 @@
+<form [formGroup]="cadForm" (ngSubmit)="cadastrar()">
+    <input formControlName="nome" type="text" placeholder="Nome"><br>
+    <input formControlName="idade" type="number" placeholder="Idade"><br>
+    <input formControlName="profissao" type="text" placeholder="Profissão"><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
