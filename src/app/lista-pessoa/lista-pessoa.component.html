@@ -1,0 +1,9 @@
+
+<ul>
+    <li *ngFor="let pessoa of pessoas$ | async">
+       <span (click)="editar(pessoa.id)">{{ pessoa.nome }}</span> <br>
+        {{ pessoa.idade }} <br>
+        {{ pessoa.profissao }}
+        <button (click)="deletar(pessoa.id)">Deletar</button>
+    </li>
+</ul>
